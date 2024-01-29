@@ -40,7 +40,7 @@ export const generateTourResponse = async ({ city, country }) => {
         "country": "${country}",
         "title": "title of the tour",
         "description": "short description of the city and tour",
-        "stops": ["short paragraph on the stop 1 with at least 1 descriptive sentence", "short paragraph on the stop 2 with at least 1 descriptive sentence","short paragraph on the stop 3 with at least 1 descriptive sentence"]
+        "stops": ["short paragraph on the stop 1", "short paragraph on the stop 2","short paragraph on the stop 3"]
       }
     }
     "stops" property should include only three stops.
