@@ -11,9 +11,22 @@ const ToursPage = () => {
     queryKey: ['tours', searchValue],
     queryFn: () => getAllTours(searchValue),
   });
+
   return (
     <>
-      <form className='max-w-lg mb-12'>
+      <form className='mb-14 max-w-3xl'>
+        <h2 className='mb-4 text-2xl'>Your Personalized Travel Collection</h2>
+        <div className='flex flex-col gap-1 mb-4'>
+          <p>Discover all the amazing tours you've created!</p>
+          <p>
+            This is your go-to hub for revisiting, editing, or exploring your
+            personalized travel plans.
+          </p>
+          <p>
+            Each tour is tailored just for you—ready whenever you are to embark
+            on your next adventure!
+          </p>
+        </div>
         <div className='w-full join'>
           <input
             type='text'
@@ -24,7 +37,7 @@ const ToursPage = () => {
             required
           />
           <button
-            className='btn btn-primary join-item'
+            className='btn btn-primary join-item lg:w-[200px]'
             type='button'
             disabled={isPending}
             onClick={() => setSearchValue('')}
@@ -34,7 +47,7 @@ const ToursPage = () => {
         </div>
       </form>
       {isPending ? (
-        <span className=' loading'></span>
+        <span className='loading'></span>
       ) : (
         <ToursList data={data} />
       )}

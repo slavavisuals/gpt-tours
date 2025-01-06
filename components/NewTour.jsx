@@ -58,8 +58,21 @@ const NewTour = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className='max-w-2xl'>
-        <h2 className='mb-4'>Select your dream destination</h2>
+      <form onSubmit={handleSubmit} className='max-w-3xl'>
+        <h2 className='mb-4 text-2xl'>Plan Your Next Adventure!</h2>
+        <div className='flex flex-col gap-1 mb-4'>
+          <p>
+            Enter your dream destination: <strong>city</strong> and{' '}
+            <strong>country</strong> and let us craft a personalized tour just
+            for you.
+          </p>
+          <p>
+            Click <strong>generate tour</strong> to start building unforgettable
+            memories.
+          </p>
+          <p>Your journey begins here!</p>
+        </div>
+
         <div className='w-full join'>
           <input
             type='text'

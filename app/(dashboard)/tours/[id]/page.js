@@ -24,7 +24,7 @@ const SingleTourPage = async ({ params }) => {
 
   return (
     <div>
-      <Link href='/tours' className='mb-12 btn btn-secondary'>
+      <Link href='/tours' className='mb-12 btn btn-primary'>
         back to tours
       </Link>
       {tourImage ? (
@@ -33,7 +33,7 @@ const SingleTourPage = async ({ params }) => {
             src={tourImage}
             width={300}
             height={300}
-            className='object-cover mb-16 shadow-xl rounded-xl h-96 w-96'
+            className='object-cover mb-16 w-96 h-96 rounded-xl shadow-xl'
             alt={tour.title}
             priority
           />
