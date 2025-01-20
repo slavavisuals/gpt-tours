@@ -14,7 +14,7 @@ const ToursPage = () => {
 
   return (
     <>
-      <form className='mb-14 max-w-3xl'>
+      <form className='mb-14 max-w-5xl'>
         <h2 className='mb-4 text-2xl'>Your Personalized Travel Collection</h2>
         <div className='flex flex-col gap-1 mb-4'>
           <p>Discover all the amazing tours you've created!</p>
