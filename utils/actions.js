@@ -31,6 +31,7 @@ export const generateChatResponse = async (chatMessages) => {
 };
 
 export const generateTourResponse = async ({ city, country }) => {
+  console.log('Inside generateTourResponse');
   const query = `Find a exact ${city} in this exact ${country}.
     If ${city} and ${country} exist, create a list of things families can do in this ${city},${country}. 
     Once you have a list, create a one-day tour. Response should be  in the following JSON format: 
@@ -51,7 +52,7 @@ export const generateTourResponse = async ({ city, country }) => {
         { role: 'system', content: 'you are a tour guide' },
         { role: 'user', content: query },
       ],
-      model: 'gpt-3.5-turbo',
+      model: 'gpt-4o-mini',
       temperature: 0,
     });
     // potentially returns a text with error message
